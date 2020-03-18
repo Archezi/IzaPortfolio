@@ -1,0 +1,25 @@
+@import "../scss/variables";
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-template-areas: "A B C";
+    grid-template-columns: 1fr 8.66fr 1fr;
+    grid-template-rows: 1;
+    
+    height: $ph-height;
+    min-height: 60px;
+    max-height: 120px;
+    width: 100vw;
+
+    &_legal{
+        grid-area: A;
+    }
+    &_center {
+        grid-area: B;
+    }
+    &_social {
+        grid-area: C;
+    }
+}

@@ -1,0 +1,27 @@
+@import "../scss/variables";
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr 8.66fr 1fr;
+    grid-template-rows: 1;
+    grid-template-areas: "A B C";
+    height: $ph-height;
+    min-height: 60px;
+    max-height: 120px;
+    width: 100vw;
+
+    &_menu {
+        grid-area: A;
+
+    }
+    &_logo {
+        grid-area: B;
+    }
+    &_contact {
+        grid-area: C;
+    }
+}
